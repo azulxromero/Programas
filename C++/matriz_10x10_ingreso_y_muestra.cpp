@@ -1,0 +1,28 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+main()
+{
+	int numeros[10][10];
+	for(int i=0; i<10; i++)
+	{
+		for(int j=0; j<10; j++)
+		{
+			cout<<"Digite un numero [ "<<i<<" ]"<<" [ "<<j<<" ] ";
+			cin>>numeros[i][j];
+		}
+	}
+	cout<<endl;
+	for(int i=0; i<10; i++)
+	{
+		for(int j=0; j<10; j++)
+		{
+			cout<<numeros[i][j];
+		}
+		cout<<"\n";
+	}
+	
+	getch();
+	return 0;
+	
+}
