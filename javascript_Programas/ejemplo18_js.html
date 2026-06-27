@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 18 de JAVASCRIPT</title>
+    <link rel="stylesheet" href="css/e18.css">
+</head>
+<body>
+    <h1>Funciones de JavaScript</h1>
+    <h2>Sintaxis de funciones de JavaScript</h2>
+    <p>Una función de JavaScript se define como la palabra clave function, seguida de un nombre, seguido de un paréntesis ():
+        Los nombres de funciones pueden contener letras, dígitos, subrayados y signos de dólar (las mismas reglas que las variables).
+        Los paréntesis pueden incluir nombres de parámetros separados por comas: (parámetro1, parámetro2, . . .)
+        El código a ejecutar, por la función, se coloca entre corchetes: {}</p>
+    <p>Este ejemplo llama a una función que realiza un cálculo y devuelve el resultado:</p>
+    <p>Los parámetros de la función se enumeran entre paréntesis () en la definición de la función.
+        Los argumentos de la función son los valores recibidos por la función cuando se invoca.
+        Dentro de la función, los argumentos (los parámetros) se comportan como variables locales.</p>
+    <h2>Cómo se invoca a una función</h2>
+    <p>El código dentro de la función se ejecutará cuando "algo" invoque (llame) a la función:</p>
+    <ul type="square">
+        <li>Cuando ocurre un evento (cuando un usario hace clic en un botón)</li>
+        <li>Cuando se invoca (llama) desde código JavaScript</li>
+        <li>Automáticamente (auto invocado)</li>
+    </ul>
+    <h2>Función Return (retorno)</h2>
+    <p>Las funcions suelen calcular un valor de retorno. El valor de retorno se "devuelve" a la "persona que llama":</p>
+    <h2>Ejemplo</h2>
+    <p>Ejemplo: function producto(p1*p2) <br>
+    return p1*p2 <br>
+se hace la llamada producto (5, 9)</p><br>
+<p id="demo1"></p>
+
+<script>
+    function producto(p1, p2){
+        return p1 * p2;
+    }
+    document.getElementById("demo1").innerHTML = producto(5, 9);
+    </script>
+    <h2>¿Por qué usar funciones?</h2>
+    <p>Porque puede reutilizar el código: defina el código una vez y utilícelo muchas veces. Puede usar el mismo código muchas veces con diferentes argumentos para producir resultados diferentes.</p>
+
+    <p>En este ejemplo se llama a una función para convertir de Fahrenheit a Celsius:</p>
+       <p>function aCelcius(f){ <br>
+          return (5/9) * (f-32)
+        } <br>
+    document.getElementById("demo2").innerHTML = aCelcius(77);</p>
+    <p id="demo2"></p>
+    <script>
+        function aCelcius(f) {
+            return (5/9) * (f-32);
+        }
+        document.getElementById("demo2").innerHTML = aCelcius(77);
+    </script>
+    <h2>Variables locales</h2>
+    <p>Las variables declaradas dentro de una función de JavaScript se vuelven LOCALES para la función. Solo se puede acceder a las variables locales desde dentro de la función.</p>
+    <p>Dado que las variables locales solo se reconocen dentro de sus funciones, las variables con el mismo nombre se pueden usar en diferentes funciones.
+        Las variables locales se crean cuando se inicia una función y se eliminan cuando se completa la función.</p>
+    
+</body>
+</html>

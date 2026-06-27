@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 20</title>
+    <link rel="stylesheet" href="css/e20.css">
+    <script src="js/ej20.js"></script>
+
+</head>
+<body>
+<h1>FORMULARIOS</h1>
+    <p>Se utiliza un formulario HTML para recopilar la entrada del usuario. La entrada del usuario se envía con mayor frecuencia a un servidor para su procesamiento.</p>
+    <p>El formulario es un contenedor para diferentes tipos de elementosde entrada, como: campos de texto, casillas de veriicación, botones de opción, botones de envío, etc.</p><br>
+
+    <center><img src="img/tipos.jpeg" alt="" width="20%" height="30%"></center>
+    <br><br>
+<h1>EJEMPLO ELEMENTO DE ETIQUETA</h1>
+    <h1>El botón SUBMIT</h1>
+    <p>Es un botón para enviar los datos del formulario a un controlador de formulario.</p>
+    <form class="FormularioUno" id="FormularioUno" onsubmit="return validarFormularioUno()">
+        <label for="nom">Nombre:</label><br>
+        <input type="text" id="nom" name="nom" value=""><br>
+        <label for="ape">Apellidos:</label><br>
+        <input type="text" id="ape" name="ape" value=""><br><br>
+        <input type="submit" value="Enviar" id="envio1">
+    </form>
+    <!--NOTA: El for atributo de la etiqueta <label> debe ser igual al id atributo del <input> para unirlos.-->
+    <p>Si se hace click en el botón "Submit", los datos del forulario se enviarán a una página llamada "pag1.php".
+        Pero no lo hagas porque no tenemos el archivo creado.
+    </p>
+    <br><br>
+<h1>EJEMPLOS DE BOTONES DE RADIO</h1>
+    <br>
+    <p>Los botones de opción le permiten al usuario seleccionar UNA de un número limitado de opciones.</p>
+    <p>Seleccione su lenguaje favorito:</p>
+    <form class="FormularioDos" id="FormularioDos" onsubmit="return validarFormularioDos()">
+    <input type="radio" id="html" name="favorito" value="HTML">
+    <label for="html">HTML</label><br>
+    <input type="radio" id="c" name="favorito" value="C++" >
+    <label for="c">C++</label><br>
+    <input type="radio" id="JavaScript" value="JavaScript" name="favorito">
+    <label for="JavaScript">JavaScript</label><br><br>
+    <input type="submit" value="Enviar" id="envio2">
+</form>
+<h1>EJEMPLO DE CASILLAS DE VERIFICACION</h1>
+    <br>
+    <p>Las casillas de verificación permiten al usuario seleccionar CERO o MÁS 
+        opciones de un número limitado de opciones.</p>
+    <p>El <strong>input type="checkbox"</strong>define una casilla de verificación:</p>
+
+    <form class="FormularioTres" id="FormularioTres" onsubmit="return validarFormularioTres()">
+    <h2>Cuál de estos autos tienes:</h2>
+    <input type="checkbox" id="v1" name="v1" value="Twingo">
+    <label for="v1"> Tengo un Twingo</label><br>
+    <input type="checkbox" id="v2" name="v2" value="Lamborghini">
+    <label for="v2"> Tengo un Lamborghini</label><br>
+    <input type="checkbox" id="v3" name="v3" value="Ferrari">
+    <label for="v3"> Tengo un Ferrari</label><br><br>
+    <input type="submit" value="Enviar" id="envio3">
+    </form>
+<h1>EJEMPLO SELECTED</h1>
+    <p>Elemento define una lista desplegable:</p><br>
+    <form action="" class="FormularioCuatro" id="FormularioCuatro" onsubmit="return validarFormularioCuatro()">
+    <label for="deporte">Seleccione un Deporte: </label>
+    <select id="deporte" name="deporte">
+    <option value="voly">Voleybol</option>
+    <option value="fut">Futbol</option>
+    <option value="tenis">Tenis</option>
+    <option value="beis">Beisbol</option>
+    </select>
+    <br><br><br><br><br>
+    <input type="submit" id="envio4">
+    </form>
+    <br>
+<h1>El elemento TEXTAREA</h1>
+    <p>Define un campo de entrada de varias líneas (un área de texto)</p>
+    <form action="" class="FormularioCinco" id="FormularioCinco" onsubmit="return validarFormularioCinco()">
+    <textarea name="mensaje" cols="30" rows="10"> </textarea>
+    <br><br>
+    <input type="submit" id="envio5">
+    </form>
+    <br>
+<h1>Los elementos fieldset y legend</h1>
+    <p>El elemento fieldset, se utiliza para agrupar datos relacionados en un formulario.
+        El elemento legend, define un título para el elemento fieldset.
+    </p>
+    <h2>Ejemplo: </h2>
+    <form action="" class="FormularioSeis" id="FormularioSeis" onsubmit="return validarFormularioSeis()">
+    <fieldset>
+        <legend>Personas: </legend>
+        <label for="pnomb">Nombre: </label><br>
+    <input type="text" id="pnomb" name="pnomb" value=""><br><br>
+        <label for="ape">Apellidos: </label><br>
+    <input type="text" id="ape" name="ape" value=""><br><br>
+    <input type="submit" value="Submit" id="envio6">
+    </fieldset>
+    </form><br>
+<h1>El elemento lista de datos</h1>
+    <p>El elemento datalist especifica una lista de opciones predefinidas para un elemento de entrada.</p>
+    <form action="" class="FormularioSiete" id="FormularioSiete" onsubmit="return validarFormularioSiete()">
+    <input list="navegadores" name="navegadores">
+    <datalist id="navegadores">
+       <option value="Internet Explorer">
+       <option value="Firefox">
+       <option value="Chrome">
+       <option value="Opera">
+       <option value="Safari">
+      </datalist>
+      
+      <input type="submit" id="envio7">
+      </form>
+      <h1>Atributos de formulario HTML</h1>
+      <p>El resultado enviado se abrira en una nueva pestaña
+      del navegador:</p><br>
+      <form action="" class="FormularioOcho" id="FormularioOcho" onsubmit="return validarFormularioOcho()">
+       <label for="pnomb">Nombre:</label><br>
+       <input type="text" id="pnomb" name="pnomb" value=""><br>
+       <label for="ap">Apellidos:</label><br>
+       <input type="text" id="ap" name="ape" value=""><br><br>
+       <input type="submit" value="Submit" id="envio8">
+      </form>
+      <br>
+<h1>El atributo del método</h1>
+      <p>El atributo method, especifica el método HTTP que se utilizará al enviar los datos del formulario. <br>
+         Los datos del formulario se pueden enviar como variables de URL (con method="get") o como transacción posterior HTTP (con method="post"). <br>
+         El método HTTP predeterminado al enviar datos de formulario es GET.</p><br>
+    <h2>Método GET</h2><br>
+    <form action="" class="FormularioNueve" id="FormularioNueve" onsubmit="return validarFormularioNueve()">
+       <label for="pnomb">Nombre: </label><br>
+       <input type="text" id="pnomb" name="pnomb" value=""><br>
+       <label for="ap">Apellidos:</label><br>
+       <input type="text" id="ap" name="ape" value=""><br><br> 
+       <input type="submit" value="Submit" id="envio9">
+    </form>
+    <br>
+    <p>Después de enviar, observe que los valores del formulario están visibles en la barra de direcciones de la nueva pestaña del navegador.</p><br>
+    <h2>Metodo POST</h2><br>
+    <form action="" class="FormularioDiez" id="FormularioDiez" onsubmit="return validarFormularioDiez()">
+       <label for="pnomb">Nombre:</label><br>
+       <input type="text" id="pnomb" name="pnomb" value=""><br> 
+       <label for="ap">Apellidos:</label><br>
+       <input type="text" id="ap" name="ape" value=""><br><br>
+       <input type="submit" value="Submit" id="envio10">
+    </form>
+    <p>Después de enviar, observe que, a diferencia del método GET, los valores del formulario NO están visibles en la barra de direcciones de la nueva pestañe del navegador.</p>
+       <input type="checkbox" value="condiciones" name="condiciones" id="condiciones"/> He leído y acepto las condiciones <br>
+       <input type="checkbox" value="privacidad" name="privacidad" id="privacidad"/> He leído la política de privacidad
+</body>
+</html>

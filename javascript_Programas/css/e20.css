@@ -1,0 +1,168 @@
+body{
+    background-color: lightslategrey;
+    color: aliceblue;
+    padding-left: 10%;
+}
+.titulo{
+    font-size: 80px;
+    font-family: 'Courier New', Courier, monospace;
+}
+form.FormularioUno{
+    width: 300px;
+    height: 300px;
+    border-radius: 5%;
+    margin: auto;
+    padding-top: 20px;
+    padding-left: 30px;
+    color: white;
+    background-color: rgb(75, 62, 165);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+form.FormularioDos{
+    width: 300px;
+    height: 300px;
+    border-radius: 5%;
+    margin: auto;
+    padding-top: 20px;
+    padding-left: 30px;
+    color: white;
+    background-color: rgb(127, 179, 125);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+form.FormularioTres{
+    width: 300px;
+    height: 300px;
+    border-radius: 5%;
+    margin: auto;
+    padding-top: 20px;
+    padding-left: 30px;
+    color: white;
+    background-color: rgb(97, 142, 194);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+form.FormularioCuatro{
+    width: 300px;
+    height: 300px;
+    border-radius: 5%;
+    margin: auto;
+    padding-top: 20px;
+    padding-left: 30px;
+    color: white;
+    background-color: rgb(221, 163, 86);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+form.FormularioCinco{
+    width: 300px;
+    height: 300px;
+    border-radius: 5%;
+    margin: auto;
+    padding-top: 20px;
+    padding-left: 30px;
+    color: white;
+    background-color: rgb(206, 129, 183);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+form.FormularioSeis{
+    width: 300px;
+    height: 300px;
+    border-radius: 5%;
+    margin: auto;
+    padding-top: 20px;
+    padding-left: 30px;
+    color: white;
+    background-color: rgb(216, 214, 112);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+form.FormularioSiete{
+    width: 300px;
+    height: 300px;
+    border-radius: 5%;
+    margin: auto;
+    padding-top: 20px;
+    padding-left: 30px;
+    color: white;
+    background-color: rgb(202, 174, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+form.FormularioOcho{
+    width: 300px;
+    height: 300px;
+    border-radius: 5%;
+    margin: auto;
+    padding-top: 20px;
+    padding-left: 30px;
+    color: black;
+    background-color: rgb(136, 250, 244);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+form.FormularioNueve{
+    width: 300px;
+    height: 300px;
+    border-radius: 5%;
+    margin: auto;
+    padding-top: 20px;
+    padding-left: 30px;
+    color: white;
+    background-color: rgb(255, 82, 82);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+form.FormularioDiez{
+    width: 300px;
+    height: 300px;
+    border-radius: 5%;
+    margin: auto;
+    padding-top: 20px;
+    padding-left: 30px;
+    color: white;
+    background-color: rgb(125, 57, 202);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#envio1{
+    border-radius: 2%;
+    background-color: rgb(191, 181, 255);
+    color: black;
+}
+#envio2{
+    border-radius: 2%;
+    background-color: rgb(177, 209, 176);
+    color: black;
+}
+#envio3{
+    border-radius: 2%;
+    background-color: rgb(166, 196, 231);
+    color: black;
+}
+#envio4{
+    border-radius: 2%;
+    background-color: rgb(240, 208, 167);
+    color: black;
+}
+#envio5{
+    border-radius: 2%;
+    background-color: rgb(231, 197, 220);
+}
+#envio6{
+    border-radius: 2%;
+    background-color: rgb(248, 247, 201);
+    color: black;
+}
+#envio7{
+    border-radius: 2%;
+    background-color: rgb(204, 191, 230);
+    color: black;
+}
+#envio8{
+    border-radius: 2%;
+    background-color: rgb(205, 255, 253);
+    color: black;
+}
+#envio9{
+    border-radius: 2%;
+    background-color: rgb(255, 151, 151);
+    color: black;
+}
+#envio10{
+    border-radius: 2%;
+    background-color: rgb(165, 133, 202);
+    color: black;
+}

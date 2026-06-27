@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ejemplo 15 de JAVASCRIPT</title>
+</head>
+<body>
+<h2>4 formas de declarar una variable de JavaScript:</h2>
+<ol>
+<li>Usando var:</li>
+<li>Usando let</li>
+<li>Usando const</li>
+<li>Usando nada</li>
+<ol>
+<h2>Cuando usar Var</h2>
+<p>
+La palabra var se usa en todo el código JavaScript desde 1995 hasta 2015.
+</p>
+<p>
+Las palabras let y const se agregaron a JavaScript en el 2015. Si se desea que el código se ejecute en navegadores más antiguos, se debe usar var.
+</p>
+<p>En este ejemplo precio1, precio2 y total son variables</p>
+<p id="ejemplo1"></p>
+<script>
+const precio1 = 45;
+const precio2 = 50;
+let total = precio1 + precio2;
+document.getElementById("ejemplo1").innerHTML="El total es : "+total;
+</script>
+<p>En JavaScript las cadenas de caracteres se escriben con comillas.
+     Los números se escriben sin comillas.</p> 
+<p id="ejemplo2"></p>
+
+<script>
+const pi = 3.14;
+let alumno = "Michelle Reyes";
+let respuesta = "Aquí presente!";
+document.getElementById("ejemplo2").innerHTML= pi + "<br>" + alumno + "<br>" + respuesta;
+</script>
+
+<p>Crear una variable, asignarle valor y mostrarla:</p>
+<p id="ejemplo3"></p>
+<script>
+let nombreAuto = "Giulietta";
+document.getElementById("ejemplo3").innerHTML= "Este auto tiene nombre de mujer: " + nombreAuto;
+</script>
+<p>En este ejemplo, x, y, z son variables</p>
+<p id="ejemplo4"></p>
+<script>
+var x = 3;
+var y = 4;
+var z = x + y;
+document.getElementById("ejemplo4").innerHTML="El valor de z es: " + z;
+</script>
+
+<br />
+<h2>Usando let</h2>
+<p id="ejemplo5"></p>
+<script>
+let a = 2;
+let b = 8;
+let c = a + b;
+document.getElementById("ejemplo5").innerHTML="El valor de c es: " + C;
+</script>
+<h2>Variables no declaradas en JavaScript</h2>
+<p>En este ejemplo d, e y f son variables no declaradas.</p>
+<p id="ejemplo6"></p>
+<script>
+d = 7;
+e = 9;
+f = d + e;
+document.getElementById("ejemplo6").innerHTML="El valor de f es: " + f;
+</script>
+</body>
+</html>

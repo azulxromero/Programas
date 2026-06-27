@@ -1,0 +1,9 @@
+img{
+    display: block;
+    margin: auto;
+    width: auto;
+    height: auto;
+}
+body{
+    background: url(../img/fondolila.jpg);
+}

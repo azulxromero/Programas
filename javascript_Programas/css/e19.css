@@ -1,0 +1,49 @@
+*{
+    /*
+    outline: 1px solid red;
+    */
+    box-sizing: border-box;
+}
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+header{
+    /*ESTILO DE LA CABECERA*/
+    background: url("../img/imagenfondo.jpg");
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: aliceblue;
+}
+section{  /*CONETENEDOR PARA FLEXBOXES*/
+    display: -webkit-flex; 
+    display: flex;/*ESTO HACE QUE LA FLEXION SE CONVIERTA EN CONTENEDOR FLEX, Y SUS HIJOS EN ELEMENTOS FLEXIBLES*/
+}
+nav{
+    -webkit-flex:1;
+    -ms-flex: 1;
+    flex: 1;
+    background-color: skyblue;
+    padding: 20px;
+}
+nav ul{
+    /*ESTILO DE LA LISTA DENTRO DEL MENU */
+    list-style-type: none;
+    padding: 0;
+}
+article{
+    -webkit-flex:3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: rgb(20, 54, 83);
+    color: white;
+    padding: 10px;
+}
+footer{
+    /*ESTILO DEL PIE*/
+    background-color: black;
+    color: azure;
+    justify-content: center;
+}
+/*DISEÑO RESPONSIVO, HACE QUE EL MENU Y EL CONTENIDO (DENTRO DE LA SECCION),
+se adapten a cualquier dispositivo

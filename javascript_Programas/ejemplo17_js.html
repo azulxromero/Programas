@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 17 de JAVASCRIPT</title>
+    <script src="js/ej17.js"></script>
+    <link rel="stylesheet" href="css/e17.css">
+</head>
+<body>
+    <h1>Operadores de Asignación</h1>
+    <img src="img/asigacion.PNG" alt=""><br>
+    <h2>El Operador +=</h2>
+    <p>El operador de asignación (+=) agrega un valor a una variable.</p>
+    <p id="demo1"></p>
+    <h2>El Operador +</h2>
+    <p>El operador + también se puede usar para agregar (concatenar) cadenas.</p>
+    <p id="demo2"></p>
+    <form id="primero"><!--Adelamtaremos un poco de formularios-->
+        <input type="button" value="Mostrar +=" onclick="asigna()"><br>
+        <input type="button" value="Mostrar +" onclick="mas()"><br>
+    </form>
+    <br>
+    <h1>Operadores de Comparación</h1>
+    <img src="img/comparacion.PNG" alt=""><br>
+
+    <h2>El Operador ==</h2>
+
+    <p>Se asigna el valor de 5 a x; y muestra el valor de comparación (x == 8):</p>
+    <p id="demo3"></p>
+    <h2>El Operador >= </h2>
+    <p>Se asigna el valor de 5 a x, y muestra el valor de la comparación (x >= 8).</p>
+    <p id="demo4"></p>
+    <form id="segundo">
+        <input type="button" value="Mostrar ==" onclick="comparar()"><br>
+        <input type="button" value="Mostrar >=" onclick="mayor()"><br>
+    </form>
+    <h1>Operadores Lógicos</h1>
+    <img src="img/logicos.PNG" alt="">
+    <h2>El Operador && (y Lógico)</h2>
+    <p>El operador && regresa un valor verdadero si ambas expresiones son verdaderas, de lo contario regresa Falso.</p>
+    <p> si p = 6 <br>
+       si q = 3</p>
+       <p id="demo5"></p>
+       <form id="tercero">
+        <input type="button" value="Mostrar &&" onclick="op_and()"><br>
+       </form>
+       <h2>El Operador || (Lógico OR)</h2>
+       <p>El operador || devuelve verdadero si una o ambas expresiones son verdaderas, de lo contrario regresa Falso.</p>
+       <p>let x = 6 <br>
+          let y = 3</p>
+
+       <p id="demo6"></p>
+       <form id="cuarto">
+        <input type="button" value="Mostrar ||" onclick="op_or()"><br>
+       </form>
+
+</body>
+</html>
